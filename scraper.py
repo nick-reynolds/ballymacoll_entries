@@ -8,6 +8,8 @@ with Browser("phantomjs") as browser:
     # Open the page you want...
     browser.visit("https://www.racingpost.com/profile/owner/127223/ballymacoll-stud/entries")
 
+    print "visited"
+    
     # Scrape the data you like...
     entries = browser.find_by_css(".pp-entries__item")
     for entry in entries:
