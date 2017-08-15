@@ -1,3 +1,6 @@
+import scraperwiki
+import lxml.html
+
 from splinter import Browser
 
 with Browser("phantomjs") as browser:
